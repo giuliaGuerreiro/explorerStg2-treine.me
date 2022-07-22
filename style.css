@@ -1,0 +1,138 @@
+:root {
+  font-size: 62.5%;
+
+  --fc-secondary: hsla(186, 40%, 67%, 1);
+  --fc-button: hsl(0, 0%, 98%);
+  --bg-button: hsl(159, 36%, 57%);
+
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-secondary: 'Mulish', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-size: 1.8rem;
+}
+
+ul a,
+h1,
+button {
+  font-family: var(--ff-secondary);
+}
+
+#app {
+  max-width: 100.5rem;
+  margin: 6.5rem auto 3rem;
+  padding: 0 5rem 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+main {
+  margin: 5.8rem 0 8.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10.2rem;
+}
+
+main section {
+  max-width: 48.9rem;
+}
+
+h1, h1 span {
+  font-weight: normal;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+}
+
+h1 span {
+  color: var(--fc-secondary);
+  font-weight: bold;
+}
+
+section p,
+section p strong {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  margin: 4rem 0;
+}
+
+section button {
+  color: var(--fc-button);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background-color: var(--bg-button);
+  border: none;
+  border-radius: .4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.6rem 3.2rem;
+
+  cursor: pointer;
+}
+
+section button:hover {
+  filter: brightness(1.1);
+}
+
+#jump {
+  width: 41.7rem;
+  height: auto;
+
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  max-width: 59.2rem;
+  margin: 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+section p,
+footer * {
+  font-family: var(--ff-primary);
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
